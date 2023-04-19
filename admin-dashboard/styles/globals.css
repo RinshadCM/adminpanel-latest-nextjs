@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar-option {
+    @apply relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6 cursor-pointer;
+  }
+  .main {
+    @apply bg-gray-100 calc-width max-h-screen float-right font-inter;
+  }
+
+  .calc-width {
+    @apply w-[calc(100%-16rem)];
+  }
+
+  .save-button {
+    @apply outline-none w-28 py-[0.625rem] px-[0.75rem] rounded-[0.3125rem]  font-semibold text-[0.875rem] h-[2.5rem] cursor-pointer text-white bg-[#1a73e8] mb-[20px]  border-none mt-[10px] flex items-center justify-center;
+  }
+  .delete-button {
+    @apply outline-none w-28 py-[0.625rem] px-[0.75rem] rounded-[0.3125rem]  font-semibold text-[0.875rem] h-[2.5rem] cursor-pointer text-white bg-[#e50913] mb-[20px]  border-none mt-[10px] flex items-center justify-center;
+  }
+
+  .current-section-option {
+    @apply cursor-pointer px-10;
+  }
+}
+.preferred_roles {
+  @apply text-[#788699] border-[1px] border-[#d6dae0] rounded-3xl my-[0.35rem] mx-[0.25rem] py-[0.7rem] px-[0.875rem] leading-[1.25rem] text-[0.875rem] text-center font-normal inline-flex cursor-pointer;
+}
+
+.MuiSvgIcon-root {
+  width: 33px;
+  height: 33px;
+  margin-right: 0.5rem;
+  color: #5a8a99 !important;
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.3s ease-in;
+}
+
+.icons {
+  width: 27px;
+  height: 27px;
+  margin-right: 0.5rem;
+  color: #5a8a99 !important;
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.3s ease-in;
+}
+
+.icons:hover {
+  background-color: #ddd;
+  border-radius: 50px;
+}
